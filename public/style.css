@@ -1,0 +1,43 @@
+#title {
+  font-size: x-large; color: blue; border: none; font-size: 30px; font-family: arial; font-weight: bolder;
+}
+
+#reset {
+  border:none; height: 25px;
+}
+
+div.board { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px; 
+}
+
+div.tile {
+  width: 150px; 
+  height: 150px; 
+  font-size: 125px; 
+  font-weight: bolder; 
+  font-family: arial;
+  }
+
+button {
+  font-size: 20px; 
+  border-radius: 8px; 
+  background-color: red; 
+  vertical-align: top;
+}
+
+
+#cell0, #cell3, #cell6, #cell1, #cell4, #cell7 {
+  border-bottom: blue solid 15px;
+}
+
+#cell6, #cell7, #cell8, #cell3, #cell4, #cell5 {
+  border-left: blue solid 15px;
+}
+
+div.playerTurn {
+  font-size: 25px; font-weight: bold; font-family: arial; color: green;
+}
+

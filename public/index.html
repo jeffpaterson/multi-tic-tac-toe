@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplayer Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+ 
+</head>
+<body>
+  <div class = "container">
+    <button id="reset">Clear Board</button>
+  </div>
+  <h2 class = "playerTurn">It is X's turn</h2>
+  <div class="board">
+    <div class="row">
+        <div class="tile" id="cell0"></div>
+        <div class="tile" id="cell1"></div>
+        <div class="tile" id="cell2"></div>
+    </div>
+      <div class="row">
+        <div class="tile" id="cell3"></div>
+        <div class="tile" id="cell4"></div>
+        <div class="tile" id="cell5"></div>
+      </div>
+      <div class="row">
+        <div class="tile" id="cell6"></div>
+        <div class="tile" id="cell7"></div>
+        <div class="tile" id="cell8"></div>
+      </div>
+  </div> 
+  <script src = "script.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket=io();
+    socket.on('moveType' ,function(mType) {
+      myMove = mType;
+    });
+    socket.on('move', function(move){
+      if (myMove != move) {
+        
+      }
+    }) 
+  </script>
+</body>
+</html>
